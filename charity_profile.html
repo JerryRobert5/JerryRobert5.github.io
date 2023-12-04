@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="Javascripte" href="charity_profile.js"
+</head>
+
+<header>  
+    <nav>  
+        <ul>  
+        <li>  
+        <a href="Final_HomePage.html"> HomePage </a>  
+        </li>  
+        <li>  
+        <a href="Final_CharityPage.html"> Charity List </a>  
+        </li>  
+        <li>  
+        <a href="Final_ProfilePage.html"> ProfilePage </a> 
+        </li>
+        </ul>  
+    </nav>  
+</header> 
+
+<body>
+
+    <body>
+
+        <header>
+            <h1>Charity Profile - HelpHub</h1>
+        </header>
+    
+        <section class="charity-info">
+            <h2>Habitat for Humanity</h2>
+            <a href="#" class="volunteer-button" onclick="toggleVolunteerForm()">Volunteer Now</a>
+        </section>
+
+        <section class="charity-info">
+            <h2>Let There Be Mom</h2>
+            <a href="#" class="volunteer-button" onclick="toggleVolunteerForm()">Volunteer Now</a>
+        </section>
+
+        <section class="charity-info">
+            <h2>United Way</h2>
+            <a href="#" class="volunteer-button" onclick="toggleVolunteerForm()">Volunteer Now</a>
+        </section>
+    
+        <section id="volunteerForm" class="volunteer-form">
+            <h2>Volunteer Now</h2>
+            <p>Enter your contact information to volunteer for Charity One:</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <script>
+            // Function to toggle display of volunteer form
+            function toggleVolunteerForm() {
+                var form = document.getElementById("volunteerForm");
+                form.style.display = form.style.display === "none" ? "block" : "none";
+            }
+        </script>
+    
+    </body>
+    
+    </html>
